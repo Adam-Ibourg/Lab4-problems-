@@ -26,6 +26,7 @@ public class IntegerListTest
     public static void dispatch(int choice)
     {
         int loc;
+        int newVal;
         switch(choice)
         {
             case 0:
@@ -39,6 +40,21 @@ public class IntegerListTest
                 break;
             case 2:
                 list.print();
+                break;
+            case 3:
+                System.out.print("Enter the element you want to add: ");
+                newVal = scan.nextInt();
+                list.addElement(newVal);
+                break;
+            case 4:
+                System.out.print("Enter the element you want to delete: ");
+                newVal = scan.nextInt();
+                list.removeFirst(newVal);
+                break;
+            case 5:
+                System.out.print("Enter the element you want to delete: ");
+                newVal = scan.nextInt();
+                list.removeAll(newVal);
                 break;
             default:
                 System.out.println("Sorry, invalid choice");
@@ -54,6 +70,9 @@ public class IntegerListTest
         System.out.println("0: Quit");
         System.out.println("1: Create a new list (** do this first!! **)");
         System.out.println("2: Print the list");
+        System.out.println("3: Add an element");
+        System.out.println("4: Remove an element's first occurrence");
+        System.out.println("5: Remove all the occurrences of an element");
         System.out.print("\nEnter your choice: ");
     }
 }
