@@ -9,8 +9,8 @@ public class Test {
 
         // Display computer science students
         Student s1 = new Student("SAFI", "Amal", "0656251700", "amal@email.com", "22885676", computerScience);
-        Student s2 = new Student("SAMI", "Ghita", "0755108923", "yahya@gmail.com", "26108721", mathematics);
-        Student s3 = new Student("ALAMI", "Samir", "0621659982", "ghita@gmail.com", "23585976", computerScience);
+        Student s2 = new Student("SAMI", "Ghita", "0755108923", "ghita@gmail.com", "26108721", mathematics);
+        Student s3 = new Student("ALAMI", "Samir", "0621659982", "samir@gmail.com", "23585976", computerScience);
 
         // Display cs students
         System.out.println("The list of students in the computer science major is: ");
